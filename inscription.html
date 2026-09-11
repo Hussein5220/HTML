@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connexion & Inscription</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- FORMULAIRE DE CONNEXION -->
+        <div class="form-box connexion">
+            <h1>Connexion</h1>
+            <p>Connectez-vous à votre compte</p>
+
+            <form>
+                <div class="input-box">
+                    <label for="email-login">Adresse e-mail</label>
+                    <input 
+                        type="email" 
+                        id="email-login"
+                        placeholder="Entrez votre adresse e-mail"
+                        required
+                    >
+                </div>
+
+                <div class="input-box">
+                    <label for="password-login">Mot de passe</label>
+                    <input 
+                        type="password" 
+                        id="password-login"
+                        placeholder="Entrez votre mot de passe"
+                        required
+                    >
+                </div>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox">
+                        Se souvenir de moi
+                    </label>
+
+                    <a href="#">Mot de passe oublié ?</a>
+                </div>
+
+                <button type="submit">Se connecter</button>
+            </form>
+
+            <p class="switch">
+                Vous n'avez pas de compte ?
+                <a href="#" id="show-register">Créer un compte</a>
+            </p>
+        </div>
+
+
+        <!-- FORMULAIRE D'INSCRIPTION -->
+        <div class="form-box inscription">
+            <h1>Inscription</h1>
+            <p>Créez votre compte gratuitement</p>
+
+            <form>
+                <div class="input-box">
+                    <label for="name">Nom complet</label>
+                    <input 
+                        type="text" 
+                        id="name"
+                        placeholder="Entrez votre nom"
+                        required
+                    >
+                </div>
+
+                <div class="input-box">
+                    <label for="email-register">Adresse e-mail</label>
+                    <input 
+                        type="email" 
+                        id="email-register"
+                        placeholder="Entrez votre adresse e-mail"
+                        required
+                    >
+                </div>
+
+                <div class="input-box">
+                    <label for="password-register">Mot de passe</label>
+                    <input 
+                        type="password" 
+                        id="password-register"
+                        placeholder="Créez un mot de passe"
+                        required
+                    >
+                </div>
+
+                <div class="input-box">
+                    <label for="confirm-password">Confirmer le mot de passe</label>
+                    <input 
+                        type="password" 
+                        id="confirm-password"
+                        placeholder="Confirmez votre mot de passe"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Créer mon compte</button>
+            </form>
+
+            <p class="switch">
+                Vous avez déjà un compte ?
+                <a href="#" id="show-login">Se connecter</a>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
