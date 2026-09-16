@@ -59,7 +59,7 @@ if (form) {
         }
 
         if (valid) {
-            form.reset();
+            form.submit();
             if (successMessage) {
                 successMessage.classList.add("visible");
             }
