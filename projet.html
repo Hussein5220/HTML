@@ -129,19 +129,19 @@
 
                 <div class="services-grid">
                     <article class="service-card">
-                        <div class="service-number">01</div>
+                        <div class="service-number"><i class="fa-solid fa-laptop-code"></i></div>
                         <h3>Création de sites web</h3>
                         <p>Des sites modernes, rapides et adaptés à tous les écrans.</p>
                     </article>
 
                     <article class="service-card">
-                        <div class="service-number">02</div>
+                        <div class="service-number"><i class="fa-solid fa-chart-line"></i></div>
                         <h3>Solutions digitales</h3>
                         <p>Des outils numériques conçus autour des besoins réels de votre activité.</p>
                     </article>
 
                     <article class="service-card">
-                        <div class="service-number">03</div>
+                        <div class="service-number"><i class="fa-solid fa-user-tie"></i></div>
                         <h3>Accompagnement</h3>
                         <p>Un accompagnement clair pour développer votre présence en ligne.</p>
                     </article>
@@ -198,7 +198,7 @@
                             <div>
                                 <strong>Adresse</strong>
                                 <span>
-                                    <a href="https://www.google.com/maps/place/6POINT9+Ouest+Foirevvb/@14.7496543,-17.474343,17z/data=!3m1!4b1!4m6!3m5!1s0xec10df30367ecf9:0x2b2a2dde7218bfe4!8m2!3d14.7496543!4d-17.4717681!16s%2Fg%2F11fskwb8n3?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.google.com/maps/place/6POINT9+Ouest+Foirevvb/@14.7496543,-17.474343,17z/data=!3m1!4b1!4m6!3m5!1s0xec10df30367ecf9:0x2b2a2dde7218bfe4!8m2!3d14.7496543!4d-17.4717681!16s%2Fg%2F11fskwb8n3?entry=ttu&amp;g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
                                         Ouest Foire, Dakar, Sénégal
                                     </a>
                                 </span>
@@ -207,38 +207,45 @@
                     </div>
 
                     <div class="contact-item contact-extra">
-                    <div class="contact-icon">
-                    <i class="fa-solid fa-clock"></i>
-                </div>
-            <div>
-                <strong>Disponibilité</strong>
-                <span>Lundi - Vendredi : 09h - 18h</span>
-            </div>
-            </div>
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <strong>Disponibilité</strong>
+                            <span>Lundi - Vendredi : 09h - 18h</span>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/221769871501?text=Bonjour%20NovaTech%2C%20je%20souhaite%20discuter%20de%20mon%20projet." class="btn btn-primary contact-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Démarrer une discussion WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
 
                 <form class="contact-form" id="contactForm" action="https://formsubmit.co/husseindiallo65@gmail.com" method="POST" novalidate>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Nouveau message depuis NovaTech">
+
                     <div class="form-group">
                         <label for="nom">Nom</label>
-                        <input type="text" id="nom" placeholder="Votre nom" required>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
                         <small id="nomError"></small>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="votre@email.com" required>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
                         <small id="emailError"></small>
                     </div>
 
                     <div class="form-group">
                         <label for="sujet">Sujet</label>
-                        <input type="text" id="sujet" placeholder="Sujet de votre message" required>
+                        <input type="text" id="sujet" name="sujet" placeholder="Sujet de votre message" required>
                         <small id="sujetError"></small>
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" rows="5" placeholder="Écrivez votre message..." required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message..." required></textarea>
                         <small id="messageError"></small>
                     </div>
 
