@@ -381,6 +381,10 @@ button, input, textarea { font: inherit; }
     display: block;
 }
 
+.about-image-small {
+    display: none;
+}
+
 .about-content h2 {
     margin: 0 0 20px;
     font-size: clamp(2rem, 3vw, 3rem);
@@ -599,6 +603,28 @@ button, input, textarea { font: inherit; }
 .contact-item a,
 .contact-item span {
     color: var(--muted);
+}
+
+.contact-extra {
+    margin-top: 20px;
+}
+
+.contact-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    box-shadow: 0 18px 32px rgba(94, 234, 212, 0.18);
+}
+
+.contact-whatsapp i {
+    font-size: 1.6rem;
 }
 
 .contact-form {
@@ -862,28 +888,4 @@ button, input, textarea { font: inherit; }
     }
     .about-image-main { min-height: 260px; }
     .contact-form { padding: 22px 18px; }
-}
-
-.contact-extra {
-    margin-top: 20px;
-}
-
-.contact-whatsapp {
-    margin-top: 22px;
-    width: 58px;
-    height: 58px;
-    min-width: 58px;
-    padding: 0;
-    border-radius: 50%;
-    justify-content: center;
-    font-size: 1.5rem;
-    box-shadow: 0 18px 32px rgba(94, 234, 212, 0.18);
-}
-
-.contact-whatsapp i {
-    font-size: 1.6rem;
-}
-
-.about-content h2 span {
-    color: var(--primary);
 }
